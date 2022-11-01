@@ -36,7 +36,7 @@ const TabNavigator = () => {
                 color={focused ? "#59C1CC" : "gray"}
               />
             );
-          } else if (route.name === "Orders") {
+          } else if ( route.name === "Orders" ) {
             return (
               <Icon
                 name="box"

@@ -18,7 +18,7 @@ import { RootStackParamList } from "../navigator/RootNavigator";
 import { Image } from "@rneui/themed";
 
 export type CustomerScreenNavigationProp = CompositeNavigationProp<
-  BottomTabNavigationProp<TabStackParamList, "Customers">,
+  BottomTabNavigationProp<TabStackParamList, "Customers" >,
   NativeStackNavigationProp<RootStackParamList>
 >;
 

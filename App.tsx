@@ -12,3 +12,5 @@ export default function App() {
     </TailwindProvider>
   );
 }
+
+//npm run dev:tailwind

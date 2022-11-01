@@ -1,4 +1,9 @@
 {
+	"static": {
+		"style": {
+			"position": "static"
+		}
+	},
 	"fixed": {
 		"style": {
 			"position": "fixed"
@@ -50,12 +55,6 @@
 	"capitalize": {
 		"style": {
 			"textTransform": "capitalize"
-		}
-	},
-	"text-blue-800": {
-		"style": {
-			"--tw-text-opacity": 1,
-			"color": "rgb(30 64 175 / var(--tw-text-opacity))"
 		}
 	},
 	"text-green-800": {

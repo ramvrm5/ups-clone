@@ -4,6 +4,7 @@ type Items {
   price: Float
   quantity: Int
 }
+
 type TrackingItems {
   customer_id: String
   items: [Items]

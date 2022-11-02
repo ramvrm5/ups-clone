@@ -15,23 +15,3 @@ export default function App() {
 
 //npm run dev:tailwind
 //stepzen import curl https://ups-clone-stepzen-49fee-default-rtdb.firebaseio.com/orders.json --query-type Order --query-name getOrders --name order
-/* 
-type ItemsEntry {
-  item_id: Int
-  name: String
-  price: Float
-  quantity: Int
-}
-type TrackingItems {
-  customer_id: String
-  items: [Items]
-}
-
-type Query {
-  getTrackingItemsById(id: ID!): TrackingItems
-    @rest(
-      endpoint: "https://ups-clone-stepzen-49fee-default-rtdb.firebaseio.com/trackingItems/$id.json"
-    )
-}
-
-*/

@@ -4,14 +4,14 @@ type ItemsEntry {
   price: Float
   quantity: Int
 }
-type TrackingItemsList {
+type TrackingItems {
   customer_id: String
-  items: [ItemsEntry]
+  items: [Items]
 }
 
 type Query {
-  getTrackingItemsById: TrackingItemsList
+  getTrackingItemsById(id: ID!): TrackingItems
     @rest(
-      endpoint: "https://ups-clone-stepzen-49fee-default-rtdb.firebaseio.com/trackingItems/1Z4V180W0324616505.json"
+      endpoint: "https://ups-clone-stepzen-49fee-default-rtdb.firebaseio.com/trackingItems/$id.json"
     )
 }

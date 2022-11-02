@@ -45,12 +45,10 @@ const CustomersScreen = () => {
         placeholder="Search by Customer"
         value={input}
         onChangeText={setInput}
-        containerStyle={tw( "bg-white pt-5 pb-0 px-10" )}
+        containerStyle={tw("bg-white pt-5 pb-0 px-10")}
       />
     </ScrollView>
   );
 };
 
 export default CustomersScreen;
-
-//npm run dev:tailwind

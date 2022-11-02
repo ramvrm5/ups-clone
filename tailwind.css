@@ -67,8 +67,3 @@
 .capitalize {
   text-transform: capitalize
 }
-
-.text-green-800 {
-  --tw-text-opacity: 1;
-  color: rgb(22 101 52 / var(--tw-text-opacity))
-}

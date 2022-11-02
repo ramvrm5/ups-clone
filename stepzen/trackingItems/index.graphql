@@ -1,4 +1,4 @@
-type ItemsEntry {
+type Items {
   item_id: Int
   name: String
   price: Float
@@ -9,9 +9,20 @@ type TrackingItems {
   items: [Items]
 }
 
+type TrackingItemsList {
+  name: ID
+  value: TrackingItems
+}
+
 type Query {
-  getTrackingItemsById( id: ID! ): TrackingItems
+  getTrackingItemById(id: ID!): TrackingItems
     @rest(
       endpoint: "https://ups-clone-stepzen-49fee-default-rtdb.firebaseio.com/trackingItems/$id.json"
+    )
+
+  getTrackingItems: [TrackingItemsList]
+    @rest(
+      endpoint: "https://ups-clone-stepzen-49fee-default-rtdb.firebaseio.com/trackingItems.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
     )
 }

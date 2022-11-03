@@ -2,13 +2,21 @@ import { TailwindProvider } from "tailwind-rn";
 import utilities from "./tailwind.json";
 import { NavigationContainer } from "@react-navigation/native";
 import RootNavigator from "./navigator/RootNavigator";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+
+const client = new ApolloClient({
+  uri: "http://localhost:5001/api/banking-dragon",
+  cache: new InMemoryCache(),
+});
 
 export default function App() {
   return (
     <TailwindProvider utilities={utilities}>
-      <NavigationContainer>
-        <RootNavigator />
-      </NavigationContainer>
+      <ApolloProvider client={client}>
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
+      </ApolloProvider>
     </TailwindProvider>
   );
 }

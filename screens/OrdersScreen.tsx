@@ -6,7 +6,6 @@ const OrdersScreen = () => {
     <View>
     <Text> OrdersScreen</Text>
       <Text> OrdersScreen</Text>
-      <Text> OrdersScreen</Text>
     </View>
   );
 };

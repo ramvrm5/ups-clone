@@ -4,7 +4,6 @@ import React from "react";
 const OrdersScreen = () => {
   return (
     <View>
-    <Text> OrdersScreen</Text>
       <Text> OrdersScreen</Text>
     </View>
   );

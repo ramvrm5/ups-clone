@@ -7,7 +7,6 @@ const useCustomerOrders = () => {
 
   return <div>
     useCustomerOrders
-
   </div>;
 };
 

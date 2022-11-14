@@ -25,7 +25,7 @@ export type CustomerScreenNavigationProp = CompositeNavigationProp<
 const CustomersScreen = () => {
   const tw = useTailwind();
   const navigation = useNavigation<CustomerScreenNavigationProp>();
-  const [input, setInput] = useState<string>("");
+  const [input, setInput] = useState<string>(" ");
 
   useLayoutEffect(() => {
     navigation.setOptions({

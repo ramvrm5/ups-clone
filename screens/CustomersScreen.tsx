@@ -31,7 +31,7 @@ const CustomersScreen = () => {
     navigation.setOptions({
       headerShown: false,
     });
-  }, [] );
+  }, []);
 
   return (
     <ScrollView style={{ backgroundColor: "#59C1CC" }}>

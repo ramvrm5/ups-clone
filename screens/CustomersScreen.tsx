@@ -1,4 +1,7 @@
 import {
+  View,
+  Text,
+  SafeAreaView,
   ScrollView,
   ActivityIndicator,
 } from "react-native";

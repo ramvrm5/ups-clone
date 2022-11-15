@@ -3,7 +3,7 @@ import React from "react";
 import { GET_ORDEERS } from "../graphql/queries";
 
 const useCustomerOrders = () => {
-  const { loading, error, data } = useQuery(GET_ORDEERS);
+  const { loading, error, data } = useQuery( GET_ORDEERS );
 
   return <div>useCustomerOrders</div>;
 };

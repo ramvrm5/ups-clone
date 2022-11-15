@@ -12,7 +12,7 @@ export const GET_CUSTOMERS = gql`
     }
 `;
 
-export const GET_ORDEERS = gql`
+export const GET_ORDERS = gql`
     query GetOrders {
         getOrders {
             value {

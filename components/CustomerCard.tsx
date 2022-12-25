@@ -13,9 +13,9 @@ type Props = {
 };
 
 const CustomerCard = ({ email, name, userId }: Props) => {
-  const { loading, error, orders } = useCustomerOrders(userId);
   const tw = useTailwind();
   const navigation = useNavigation<CustomerScreenNavigationProp>();
+  const { loading, error, orders } = useCustomerOrders(userId);
 
   return (
     <TouchableOpacity

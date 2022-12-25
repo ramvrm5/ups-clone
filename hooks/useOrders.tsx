@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
+import React, { useEffect, useState } from "react";
 import { GET_ORDERS } from "../graphql/queries";
 
-function useCustomerOrders(userId: string) {
+const useOrders = () => {
   const { loading, error, data } = useQuery(GET_ORDERS);
   const [orders, setOrders] = useState<Order[]>([]);
 
@@ -20,14 +20,11 @@ function useCustomerOrders(userId: string) {
       Address: value.Address,
       City: value.City,
     }));
-
-    const customerOrders = orders.filter(
-      (order) => order.trackingItems.customer_id === userId
-    );
-    setOrders(customerOrders);
-  }, [data, userId]);
+    console.log(orders);
+    setOrders(orders);
+  }, [data]);
 
   return { loading, error, orders };
-}
+};
 
-export default useCustomerOrders;
+export default useOrders;

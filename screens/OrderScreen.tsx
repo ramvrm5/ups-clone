@@ -38,7 +38,7 @@ const OrderScreen = () => {
 
   return (
     <View style={tw("-mt-2")}>
-      <DeliveryCard order={order} />
+      <DeliveryCard order={order} fullWidth={true} />
     </View>
   );
 };

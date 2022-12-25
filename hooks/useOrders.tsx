@@ -20,7 +20,6 @@ const useOrders = () => {
       Address: value.Address,
       City: value.City,
     }));
-    console.log(orders);
     setOrders(orders);
   }, [data]);
 

@@ -23,12 +23,12 @@ type ModalScreenNavigationProp = CompositeNavigationProp<
 type ModalScreenRouteProp = RouteProp<RootStackParamList, "MyModal">;
 
 const ModalScreen = () => {
+  const { loading, error, orders } = useCustomerOrders(userId);
   const tw = useTailwind();
   const navigation = useNavigation<ModalScreenNavigationProp>();
   const {
     params: { name, userId },
   } = useRoute<ModalScreenRouteProp>();
-  const { loading, error, orders } = useCustomerOrders(userId);
 
   return (
     <View>

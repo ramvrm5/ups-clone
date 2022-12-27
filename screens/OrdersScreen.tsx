@@ -22,8 +22,11 @@ export type OrderScreenNavigationProp = CompositeNavigationProp<
 
 const OrdersScreen = () => {
   const { loading, error, orders } = useOrders();
+
   const [ascending, setAscending] = useState<boolean>(false);
+  
   const navigation = useNavigation<OrderScreenNavigationProp>();
+
   const tw = useTailwind();
 
   useLayoutEffect(() => {

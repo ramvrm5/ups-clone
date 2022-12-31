@@ -7,11 +7,17 @@ import {
   useNavigation,
 } from "@react-navigation/native";
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
+
 import { TabStackParamList } from "../navigator/TabNavigator";
+
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+
 import { useTailwind } from "tailwind-rn/dist";
+
 import useOrders from "../hooks/useOrders";
+
 import { Button } from "@rneui/themed";
+
 import OrderCard from "../components/OrderCard";
 
 type OrderScreenRouteProp = RouteProp<RootStackParamList, "Order">;
@@ -22,8 +28,11 @@ export type OrderScreenNavigationProp = CompositeNavigationProp<
 
 const OrdersScreen = () => {
   const { loading, error, orders } = useOrders();
+
   const [ascending, setAscending] = useState<boolean>(false);
+
   const navigation = useNavigation<OrderScreenNavigationProp>();
+  
   const tw = useTailwind();
 
   useLayoutEffect(() => {

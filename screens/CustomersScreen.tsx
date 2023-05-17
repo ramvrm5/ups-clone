@@ -5,18 +5,28 @@ import {
   ScrollView,
   ActivityIndicator,
 } from "react-native";
+
 import React, { useLayoutEffect, useState } from "react";
+
 import { useTailwind } from "tailwind-rn";
+
 import {
   CompositeNavigationProp,
   useNavigation,
 } from "@react-navigation/native";
+
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
+
 import { TabStackParamList } from "../navigator/TabNavigator";
+
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+
 import { RootStackParamList } from "../navigator/RootNavigator";
+
 import { Image, Input } from "@rneui/themed";
+
 import { GET_CUSTOMERS } from "../graphql/queries";
+
 import { useQuery } from "@apollo/client";
 import CustomerCard from "../components/CustomerCard";
 

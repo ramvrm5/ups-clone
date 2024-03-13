@@ -1,9 +1,15 @@
 import { View, Text, TouchableOpacity } from "react-native";
+
 import React from "react";
+
 import useCustomerOrders from "../hooks/useCustomerOrders";
+
 import { useTailwind } from "tailwind-rn/dist";
+
 import { useNavigation } from "@react-navigation/native";
+
 import { CustomerScreenNavigationProp } from "../screens/CustomersScreen";
+
 import { Card, Icon } from "@rneui/themed";
 
 type Props = {
